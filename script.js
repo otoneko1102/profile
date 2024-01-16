@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (textToType.charAt(index) === ';') {
           typedOutput.innerHTML += '<br>';
         } else if (textToType.charAt(index) === '%') {
-          typedOutput.innerHTML += `${calculateAge('2006-11-2')}`
+          typedOutput.innerHTML += calculateAge('2006-11-2').toString();
         } else {
           typedOutput.innerHTML += textToType.charAt(index);
         }
