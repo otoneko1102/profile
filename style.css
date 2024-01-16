@@ -1,1 +1,49 @@
+body {
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+}
 
+.banner {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.language-switch {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+
+.related-links {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: left;
+}
+
+.related-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.related-links li {
+  margin-bottom: 5px;
+}
+
+.related-links a {
+  text-decoration: underline;
+  color: #addcff;
+  }
