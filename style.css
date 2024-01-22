@@ -10,6 +10,10 @@ img {
   height: auto;
 }
 
+footer {
+  text-align: center;
+}
+
 .banner {
   background-color: #333;
   color: #fff;
