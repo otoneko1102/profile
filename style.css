@@ -56,4 +56,8 @@ footer {
 .related-links a {
   text-decoration: underline;
   color: #00bfff;
-  }
+}
+
+.related-links a:hover {
+  color: #0000ff;
+}
