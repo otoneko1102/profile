@@ -89,3 +89,38 @@ footer {
 .twitter-icon img {
   width: 20px;
 }
+
+.twitter::before {
+  content: '\f099'; /* Twitter icon code from FontAwesome */
+  margin-right: 10px;
+}
+
+.instagram::before {
+  content: '\f16d'; /* Instagram icon code from FontAwesome */
+  margin-right: 10px;
+}
+
+.misskey::before {
+  content: '\f1a0'; /* Misskey icon code from FontAwesome */
+  margin-right: 10px;
+}
+
+.youtube::before {
+  content: '\f167'; /* YouTube icon code from FontAwesome */
+  margin-right: 10px;
+}
+
+.twitch::before {
+  content: '\f1e8'; /* Twitch icon code from FontAwesome */
+  margin-right: 10px;
+}
+
+.github::before {
+  content: '\f09b'; /* GitHub icon code from FontAwesome */
+  margin-right: 10px;
+}
+
+.other::before {
+  content: '\f067'; /* Other icon code from FontAwesome */
+  margin-right: 10px;
+}
