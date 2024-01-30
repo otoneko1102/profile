@@ -95,7 +95,7 @@ footer {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('img/other-icon.png');
+  background-image: url('/img/other-icon.png');
   background-size: contain;
   margin-right: 5px;
 }
@@ -105,7 +105,7 @@ footer {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('img/twitter-icon.png');
+  background-image: url('/img/twitter-icon.png');
   background-size: contain;
   margin-right: 5px;
 }
@@ -115,7 +115,7 @@ footer {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('img/instagram-icon.png');
+  background-image: url('/img/instagram-icon.png');
   background-size: contain;
   margin-right: 5px;
 }
@@ -125,7 +125,7 @@ footer {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('img/misskeyio-icon.png');
+  background-image: url('/img/misskeyio-icon.png');
   background-size: contain;
   margin-right: 5px;
 }
@@ -135,7 +135,7 @@ footer {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('img/github-icon.png');
+  background-image: url('/img/github-icon.png');
   background-size: contain;
   margin-right: 5px;
 }
@@ -145,7 +145,7 @@ footer {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('img/youtube-icon.png');
+  background-image: url('/img/youtube-icon.png');
   background-size: contain;
   margin-right: 5px;
 }
@@ -155,7 +155,7 @@ footer {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('img/twitch-icon.png');
+  background-image: url('/img/twitch-icon.png');
   background-size: contain;
   margin-right: 5px;
 }
