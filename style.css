@@ -61,3 +61,31 @@ footer {
 .related-links a:hover {
   color: #0000ff;
 }
+
+.tweet-button {
+  background-color: #1DA1F2;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.tweet-button:hover {
+  background-color: #0D8DD4;
+}
+
+.twitter-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.twitter-icon img {
+  width: 20px;
+}
