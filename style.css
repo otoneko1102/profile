@@ -159,3 +159,43 @@ footer {
   background-size: contain;
   margin-right: 5px;
 }
+
+.typing.reddit::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/reddit-icon.png');
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.typing.mastodon::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/mastodon-icon.png');
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.typing.note::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/note-icon.png');
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.typing.marshmallow::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/marshmallow-icon.png');
+  background-size: contain;
+  margin-right: 5px;
+}
