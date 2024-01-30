@@ -90,37 +90,72 @@ footer {
   width: 20px;
 }
 
-.twitter::before {
-  content: '\f099'; /* Twitter icon code from FontAwesome */
-  margin-right: 10px;
+.typing.other::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/other-icon.png');
+  background-size: contain;
+  margin-right: 5px;
 }
 
-.instagram::before {
-  content: '\f16d'; /* Instagram icon code from FontAwesome */
-  margin-right: 10px;
+.typing.twitter::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/twitter-icon.png');
+  background-size: contain;
+  margin-right: 5px;
 }
 
-.misskey::before {
-  content: '\f1a0'; /* Misskey icon code from FontAwesome */
-  margin-right: 10px;
+.typing.instagram::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/instagram-icon.png');
+  background-size: contain;
+  margin-right: 5px;
 }
 
-.youtube::before {
-  content: '\f167'; /* YouTube icon code from FontAwesome */
-  margin-right: 10px;
+.typing.misskey::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/misskey-icon.png');
+  background-size: contain;
+  margin-right: 5px;
 }
 
-.twitch::before {
-  content: '\f1e8'; /* Twitch icon code from FontAwesome */
-  margin-right: 10px;
+.typing.github::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/github-icon.png');
+  background-size: contain;
+  margin-right: 5px;
 }
 
-.github::before {
-  content: '\f09b'; /* GitHub icon code from FontAwesome */
-  margin-right: 10px;
+.typing.youtube::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/youtube-icon.png');
+  background-size: contain;
+  margin-right: 5px;
 }
 
-.other::before {
-  content: '\f067'; /* Other icon code from FontAwesome */
-  margin-right: 10px;
+.typing.twitch::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/twitch-icon.png');
+  background-size: contain;
+  margin-right: 5px;
 }
