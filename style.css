@@ -96,7 +96,7 @@ footer {
 }
 
 .menu-button {
-  background-color: #000;
+  background-color: #333;
   color: #fff;
   padding: 10px 20px;
   cursor: pointer;
@@ -112,7 +112,7 @@ footer {
   left: -250px;
   width: 250px;
   height: 100%;
-  background-color: #000;
+  background-color: #333;
   color: #fff;
   transition: left 0.3s ease;
 }
