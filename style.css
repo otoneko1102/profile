@@ -25,12 +25,6 @@ footer {
   padding: 20px;
 }
 
-.language-switch {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-}
-
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -69,7 +63,6 @@ footer {
 .tweet-button {
   background-color: #1DA1F2;
   color: #fff;
-  max-width: 300px;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
