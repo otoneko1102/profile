@@ -94,6 +94,45 @@ footer {
   width: 20px;
 }
 
+.menu-button {
+  color: #000;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.page-list {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #ccc;
+  color: #000;
+  transition: left 0.3s ease;
+}
+
+.page-list ul {
+  list-style: none;
+  padding: 15px;
+}
+
+.page-list ul li {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.page-list ul li a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
 .typing.other::before {
   content: '';
   display: inline-block;
@@ -212,43 +251,4 @@ footer {
   background-image: url('img/marshmallow-icon.png');
   background-size: contain;
   margin-right: 5px;
-}
-
-.menu-button {
-  color: #000;
-  padding: 10px 20px;
-  cursor: pointer;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 1;
-}
-
-.page-list {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background-color: #ccc;
-  color: #000;
-  transition: left 0.3s ease;
-}
-
-.page-list ul {
-  list-style: none;
-  padding: 15px;
-}
-
-.page-list ul li {
-  margin: 10px 0;
-  line-height: 1.5;
-}
-
-.page-list ul li a {
-  text-decoration: none;
-  color: #000;
-  display: inline-block;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.3s ease, color 0.3s ease;
 }
