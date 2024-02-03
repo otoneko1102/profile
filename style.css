@@ -71,6 +71,7 @@ footer {
   color: #fff;
   max-width: 300px;
   text-decoration: none;
+  text-align: center;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
@@ -120,11 +121,13 @@ footer {
 .page-list ul {
   list-style: none;
   padding: 15px;
+  color: #fff;
 }
 
 .page-list ul li {
   margin: 10px 0;
   line-height: 1.5;
+  color: #fff;
 }
 
 .page-list ul li a {
