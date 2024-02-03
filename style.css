@@ -69,6 +69,7 @@ footer {
 .tweet-button {
   background-color: #1DA1F2;
   color: #fff;
+  max-width: 300px;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
