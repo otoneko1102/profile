@@ -20,3 +20,22 @@ document.addEventListener("DOMContentLoaded", async function () {
     await typeText();
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuButton = document.querySelector('.menu-button');
+    const pageList = document.querySelector('.page-list');
+
+    menuButton.addEventListener('click', function () {
+        if (pageList.style.left === '-250px' || pageList.style.left === '') {
+            pageList.style.left = '0';
+        } else {
+            pageList.style.left = '-250px';
+        }
+    });
+
+    document.addEventListener('click', function (event) {
+        if (event.target !== menuButton && event.target !== pageList && !menuButton.contains(event.target) && !pageList.contains(event.target)) {
+            pageList.style.left = '-250px';
+        }
+    });
+});
