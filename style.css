@@ -76,7 +76,7 @@ footer {
   font-weight: bold;
   font-size: 10px;
   text-align: center;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   margin-right: 30px;
   margin-left: 30px;
