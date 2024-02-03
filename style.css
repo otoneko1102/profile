@@ -96,7 +96,8 @@ footer {
 }
 
 .menu-button {
-  color: #b3b3b3;
+  background-color: #ccc;
+  color: #000;
   padding: 10px 20px;
   cursor: pointer;
   position: fixed;
