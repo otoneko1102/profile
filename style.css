@@ -71,13 +71,13 @@ footer {
   color: #fff;
   max-width: 300px;
   text-decoration: none;
-  text-align: center;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 10px;
   text-align: center;
   display: block;
+  margin: 0 auto;
   margin-right: 30px;
   margin-left: 30px;
 }
