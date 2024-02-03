@@ -95,7 +95,7 @@ footer {
 }
 
 .menu-button {
-  color: #000;
+  color: #b3b3b3;
   padding: 10px 20px;
   cursor: pointer;
   position: fixed;
@@ -131,6 +131,9 @@ footer {
   display: inline-block;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease, color 0.3s ease;
+}
+.page-list ul li a:hover {
+  color: #0000ff;
 }
 
 .typing.other::before {
