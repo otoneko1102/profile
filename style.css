@@ -90,8 +90,9 @@ footer {
 }
 
 .menu-button {
-  border: 2px solid #000;
   color: #fff;
+  -webkit-text-stroke: 1px #333;
+  text-stroke: 1px #333;
   padding: 10px 20px;
   cursor: pointer;
   position: fixed;
