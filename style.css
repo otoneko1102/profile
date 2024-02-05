@@ -19,7 +19,7 @@ footer {
 }
 
 .banner {
-  background-color: #333;
+  background-color: #777000;
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -91,8 +91,6 @@ footer {
 
 .menu-button {
   color: #000;
-  -webkit-text-stroke: 1px #fff;
-  text-stroke: 1px #fff;
   padding: 10px 20px;
   cursor: pointer;
   position: fixed;
