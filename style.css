@@ -105,26 +105,26 @@ footer {
   left: -250px;
   width: 250px;
   height: 100%;
-  background-color: #333;
-  color: #fff;
+  background-color: #777000;
+  color: #000;
   transition: left 0.3s ease;
 }
 
 .page-list ul {
   list-style: none;
   padding: 15px;
-  color: #fff;
+  color: #000;
 }
 
 .page-list ul li {
   margin: 10px 0;
   line-height: 1.5;
-  color: #fff;
+  color: #000;
 }
 
 .page-list ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   display: inline-block;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease, color 0.3s ease;
