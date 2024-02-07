@@ -163,6 +163,16 @@ footer {
   margin-right: 5px;
 }
 
+.typing.bluesky::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/bluesky-icon.png');
+  background-size: contain;
+  margin-right: 5px;
+}
+
 .typing.misskey::before {
   content: '';
   display: inline-block;
