@@ -253,6 +253,16 @@ footer {
   margin-right: 5px;
 }
 
+.typing.steam::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/steam-icon.png');
+  background-size: contain;
+  margin-right: 5px;
+}
+
 .typing.marshmallow::before {
   content: '';
   display: inline-block;
