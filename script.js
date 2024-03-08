@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
 
         index++;
-        setTimeout(typeText, 60);
+        setTimeout(typeText, 75);
       }
     }
     await typeText();
