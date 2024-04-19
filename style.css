@@ -272,3 +272,13 @@ footer {
   background-size: contain;
   margin-right: 5px;
 }
+
+.typing.hima::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/hima-icon.gif');
+  background-size: contain;
+  margin-right: 5px;
+}
