@@ -1,2 +1,2 @@
 # profile
-https://profile.otoneko.jp/
+https://otoneko.jp/
