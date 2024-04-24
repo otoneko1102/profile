@@ -19,7 +19,7 @@ footer {
 }
 
 .banner {
-  background-color: #777000;
+  background-color: #416acc;
   color: #000;
   text-align: center;
   padding: 20px;
@@ -105,7 +105,7 @@ footer {
   left: -250px;
   width: 250px;
   height: 100%;
-  background-color: #777000;
+  background-color: #416acc;
   color: #000;
   transition: left 0.3s ease;
 }
