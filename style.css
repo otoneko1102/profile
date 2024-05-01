@@ -1,11 +1,16 @@
+@font-face {
+  font-family: 'KiwiMaru';
+  src: url('fonts/KiwiMaru-Regular.ttf') format('truetype');
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'KiwiMaru', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .typing {
-  font-family: sans-serif;
+  font-family: 'KiwiMaru', sans-serif;
 }
 
 img {
