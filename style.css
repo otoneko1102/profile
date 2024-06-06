@@ -278,6 +278,16 @@ footer {
   margin-right: 5px;
 }
 
+.typing.npm::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/npm-icon.png');
+  background-size: contain;
+  margin-right: 5px;
+}
+
 .typing.hima::before {
   content: '';
   display: inline-block;
