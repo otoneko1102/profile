@@ -19,6 +19,12 @@ img {
   height: auto;
 }
 
+.logo {
+  max-width: 100%;
+  max-height: 100px;
+  height: auto;
+}
+
 footer {
   text-align: center;
 }
