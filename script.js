@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
 
         index++;
-        setTimeout(typeText, 75);
+        setTimeout(typeText, 100);
       } else {
         clearInterval(cursorInterval);
         typedOutput.classList.add('no-cursor');
