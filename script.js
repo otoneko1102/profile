@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   for (const typedOutput of typedOutputs) {
     const textToType = typedOutput.getAttribute('data-value');
     let index = 0;
+    let cursorInterval;
 
     async function typeText() {
       if (index < textToType.length) {
@@ -15,6 +16,9 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         index++;
         setTimeout(typeText, 75);
+      } else {
+        clearInterval(cursorInterval);
+        typedOutput.classList.add('no-cursor');
       }
     }
     await typeText();
@@ -22,20 +26,20 @@ document.addEventListener("DOMContentLoaded", async function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const menuButton = document.querySelector('.menu-button');
-    const pageList = document.querySelector('.page-list');
+  const menuButton = document.querySelector('.menu-button');
+  const pageList = document.querySelector('.page-list');
 
-    menuButton.addEventListener('click', function () {
-        if (pageList.style.left === '-250px' || pageList.style.left === '') {
-            pageList.style.left = '0';
-        } else {
-            pageList.style.left = '-250px';
-        }
-    });
+  menuButton.addEventListener('click', function () {
+    if (pageList.style.left === '-250px' || pageList.style.left === '') {
+      pageList.style.left = '0';
+    } else {
+      pageList.style.left = '-250px';
+    }
+  });
 
-    document.addEventListener('click', function (event) {
-        if (event.target !== menuButton && event.target !== pageList && !menuButton.contains(event.target) && !pageList.contains(event.target)) {
-            pageList.style.left = '-250px';
-        }
-    });
+  document.addEventListener('click', function (event) {
+    if (event.target !== menuButton && event.target !== pageList && !menuButton.contains(event.target) && !pageList.contains(event.target)) {
+      pageList.style.left = '-250px';
+    }
+  });
 });
