@@ -1,7 +1,1 @@
 ErrorDocument 404 /404.html
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^([^\.]+)$ $1.html [NC,L]
-</IfModule>
