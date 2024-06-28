@@ -154,6 +154,16 @@ footer {
   margin-right: 5px;
 }
 
+.typing.telegram::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('img/telegram-icon.png');
+  background-size: contain;
+  margin-right: 5px;
+}
+
 .typing.twitter::before {
   content: '';
   display: inline-block;
