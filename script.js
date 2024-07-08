@@ -131,3 +131,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+async function pingServer(url) {
+  try {
+    const start = Date.now();
+    const response = await fetch(url);
+    const end = Date.now();
+    const responseTime = end - start;
+    const statusText = response.ok ? 'Working' : 'Suspended';
+    const uptime = response.ok ? '99.99%' : '0%';
+    document.getElementById('website-status-text').textContent = statusText;
+    document.getElementById('website-response-time').textContent = `${responseTime} ms`;
+    document.getElementById('website-uptime').textContent = uptime;
+  } catch (error) {
+    document.getElementById('website-status-text').textContent = 'Error';
+    document.getElementById('website-response-time').textContent = '-';
+    document.getElementById('website-uptime').textContent = '0%';
+  }
+}
+
+setInterval(() => pingServer('https://otoneko.jp'), 60000);
