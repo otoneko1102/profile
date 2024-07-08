@@ -106,10 +106,13 @@ document.addEventListener('DOMContentLoaded', function () {
   pageListUl.appendChild(document.createElement('br'));
   pageListUl.appendChild(document.createElement('br'));
 
+  const params = new URLSearchParams(window.location.search);
+  const isYuru = params.get('yuru') === 'true';
+
   menuData.forEach(item => {
     const listItem = document.createElement('li');
     const link = document.createElement('a');
-    link.href = item.path;
+    link.href = `${item.path}${isYuru && !item.path.includes('twitter.com') ? '?yuru=true' : ''}`;
     link.textContent = item.name;
     if (item.blank) {
       link.target = '_blank';
