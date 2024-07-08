@@ -27,6 +27,7 @@ const menuData = [
 ];
 
 document.addEventListener('DOMContentLoaded', function () {
+  pingServer('https://otoneko.jp');
   const params = new URLSearchParams(window.location.search);
   const isYuru = params.get('yuru') === 'true';
 
@@ -150,4 +151,4 @@ async function pingServer(url) {
   }
 }
 
-setInterval(() => pingServer('https://otoneko.jp'), 60000);
+setInterval(() => pingServer('https://otoneko.jp'), 10000);
