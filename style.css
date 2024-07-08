@@ -184,6 +184,7 @@ footer {
   height: 10px;
   background-color: #28a745;
   margin-top: 5px;
+  transition: width 0.5s, background-color 0.5s;
 }
 
 .ping-container {

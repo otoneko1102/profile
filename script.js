@@ -142,21 +142,24 @@ async function pingServer(url) {
     const end = Date.now();
     const responseTime = end - start;
 
-    let statusText, statusClass;
+    let statusText, statusClass, barColor;
     const uptimeData = getUptimeData();
 
     if (response.ok) {
       if (responseTime > 200) {
         statusText = 'Warning';
         statusClass = 'status-warning';
+        barColor = 'yellow';
       } else {
         statusText = 'Working';
         statusClass = 'status-ok';
+        barColor = 'green';
       }
       uptimeData.uptime += checkInterval;
     } else {
       statusText = 'Suspended';
       statusClass = 'status-error';
+      barColor = 'red';
       uptimeData.downtime += checkInterval;
     }
 
@@ -172,12 +175,14 @@ async function pingServer(url) {
     const maxPing = 200;
     const barWidth = Math.min((responseTime / maxPing) * 100, 100);
     pingBar.style.width = `${barWidth}%`;
+    pingBar.style.backgroundColor = barColor;
   } catch (error) {
     document.getElementById('website-status-text').textContent = 'Error';
     document.getElementById('website-status-text').className = 'status-error';
     document.getElementById('website-response-time').textContent = '-';
     document.getElementById('website-uptime').textContent = '0%';
     document.getElementById('ping-bar').style.width = '0%';
+    document.getElementById('ping-bar').style.backgroundColor = 'red';
 
     const uptimeData = getUptimeData();
     uptimeData.downtime += checkInterval;
