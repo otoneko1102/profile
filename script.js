@@ -15,6 +15,11 @@ const menuData = [
     blank: false
   },
   {
+    name: 'Status',
+    path: 'status.html',
+    blank: false
+  },
+  {
     name: 'Share to Twitter',
     path: 'https://twitter.com/intent/tweet?text=%23%E3%81%8A%E3%81%A8%E3%81%AD%E3%81%93%E3%83%BC%E3%81%A9%0A%E9%9F%B3%E7%8C%AB%EF%BD%A1%20(%20%40rin_pineapple%20)%20%E3%81%AEProfile%0A%0Ahttps%3A%2F%2Fotoneko.jp%2F',
     blank: true
