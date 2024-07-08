@@ -133,22 +133,70 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+const checkInterval = 10000;
+
 async function pingServer(url) {
   try {
     const start = Date.now();
     const response = await fetch(url);
     const end = Date.now();
     const responseTime = end - start;
-    const statusText = response.ok ? 'Working' : 'Suspended';
-    const uptime = response.ok ? '99.99%' : '0%';
+
+    let statusText, statusClass;
+    const uptimeData = getUptimeData();
+
+    if (response.ok) {
+      if (responseTime > 200) {
+        statusText = 'Warning';
+        statusClass = 'status-warning';
+      } else {
+        statusText = 'Working';
+        statusClass = 'status-ok';
+      }
+      uptimeData.uptime += checkInterval;
+    } else {
+      statusText = 'Suspended';
+      statusClass = 'status-error';
+      uptimeData.downtime += checkInterval;
+    }
+
+    const uptimePercentage = calculateUptimePercentage(uptimeData);
+    saveUptimeData(uptimeData);
+
     document.getElementById('website-status-text').textContent = statusText;
+    document.getElementById('website-status-text').className = statusClass;
     document.getElementById('website-response-time').textContent = `${responseTime} ms`;
-    document.getElementById('website-uptime').textContent = uptime;
+    document.getElementById('website-uptime').textContent = `${uptimePercentage.toFixed(2)}%`;
+
+    const pingBar = document.getElementById('ping-bar');
+    const maxPing = 200;
+    const barWidth = Math.min((responseTime / maxPing) * 100, 100);
+    pingBar.style.width = `${barWidth}%`;
   } catch (error) {
     document.getElementById('website-status-text').textContent = 'Error';
+    document.getElementById('website-status-text').className = 'status-error';
     document.getElementById('website-response-time').textContent = '-';
     document.getElementById('website-uptime').textContent = '0%';
+    document.getElementById('ping-bar').style.width = '0%';
+
+    const uptimeData = getUptimeData();
+    uptimeData.downtime += checkInterval;
+    saveUptimeData(uptimeData);
   }
 }
 
-setInterval(() => pingServer('https://otoneko.jp'), 10000);
+function getUptimeData() {
+  const data = localStorage.getItem('uptimeData');
+  return data ? JSON.parse(data) : { uptime: 0, downtime: 0 };
+}
+
+function saveUptimeData(data) {
+  localStorage.setItem('uptimeData', JSON.stringify(data));
+}
+
+function calculateUptimePercentage(data) {
+  const total = data.uptime + data.downtime;
+  return total === 0 ? 0 : (data.uptime / total) * 100;
+}
+
+setInterval(() => pingServer('https://otoneko.jp'), checkInterval);
