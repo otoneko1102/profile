@@ -145,6 +145,8 @@ async function pingServer(url) {
     const end = Date.now();
     const responseTime = end - start;
 
+    console.log(`Ping: ${responseTime} ms`);
+
     let statusText, statusClass, barColor;
     const uptimeData = getUptimeData();
 
@@ -207,4 +209,11 @@ function calculateUptimePercentage(data) {
   return total === 0 ? 0 : (data.uptime / total) * 100;
 }
 
-setInterval(() => pingServer('https://otoneko.jp'), checkInterval);
+function sendSecretMessage() {
+  console.log('=^..^= < Meow! How Did You Get Here?');
+}
+
+setInterval(() => {
+  pingServer('https://otoneko.jp');
+  sendSecretMessage();
+}, checkInterval);
