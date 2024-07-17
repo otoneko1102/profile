@@ -145,7 +145,7 @@ async function pingServer(url) {
     const end = Date.now();
     const responseTime = end - start;
 
-    console.log(`Ping: ${responseTime} ms`);
+    console.log(`=^..^= < Meow! Ping: ${responseTime} ms`);
 
     let statusText, statusClass, barColor;
     const uptimeData = getUptimeData();
