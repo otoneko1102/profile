@@ -26,6 +26,11 @@ const menuData = [
   }
 ];
 
+const author = document.createElement('div');
+author.className = 'author';
+author.innerHTML = `<p>このページは<a href="https://www.otoneko.cat/">OTONEKO.CAT</a>に移転しました</p>`
+document.body.appendChild(author);
+
 document.addEventListener('DOMContentLoaded', function () {
   pingServer('https://www.otoneko.jp');
   const params = new URLSearchParams(window.location.search);
